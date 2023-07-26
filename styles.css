@@ -1,0 +1,176 @@
+/* Estilos para el body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Fallback en caso de que las fuentes personalizadas no se carguen */
+    line-height: 1.6;
+    color: black; /* Color de texto principal */
+    background-color: #f7f7f7; /* Color de fondo */
+  }
+
+  .landing-background{
+    background-image: url('img/pexels-felix-mittermeier-957024.jpg'); /* Agrega una imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para que cubra todo el div */
+    background-position: center; /* Centra la imagen de fondo */
+    height: 100vh; /* El div ocupa el 100% del viewport height (tamaño de la ventana del navegador) */
+
+  }
+
+  /* estilos del header principal */
+.header {
+    color: #fff; /* Color del texto del encabezado */
+    padding: 0; /* Espaciado interno del encabezado */
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    position: relative; /* Establecer el posicionamiento relativo para el header */
+    z-index: 1;
+}
+
+.header .left-header img {
+    max-width: 5rem; /* ajuste del tamano del logo principal */
+    max-height: 5rem;
+}
+
+.header .left-header{
+    margin-left: 3%;
+}
+
+.header .right-header {
+    margin-right: 1rem;
+}
+
+.header .right-header ul {
+    display: flex;
+    gap: 1rem;
+}
+
+    /* estilizar los links */
+ul {
+    list-style: none;
+  }
+
+.right-header a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid brown;
+    border-radius: 30px; /* Hace que el botón sea redondeado */
+    background-color: transparent; /* Fondo transparente */
+    transition: background-color 0.3s, color 0.3s; /* Animación de transición */
+    background-color: lightgreen;
+}
+
+.right-header a:hover {
+    background-color: white; /* Color de fondo cuando se pasa el mouse sobre el botón */
+    color: black; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* estilizar el hero */
+
+.hero {
+    display: flex; /* Utiliza flexbox para centrar verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    font-size: 24px;
+    position: relative; /* Establecer el posicionamiento absoluto para el hero */
+    top: 0; /* Asegurar que el hero esté en la parte superior de la página */
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-text {
+    max-width: 600px; /* Ancho máximo del contenido para que no ocupe todo el ancho de la pantalla */
+    background-color: #222; /* Color de fondo negro suave */
+    color: #fff; /* Color del texto dentro del div */
+    padding: 5rem; /* Espaciado interno del div */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #4CAF50; /* Borde verde claro */
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.2); /* Sombra suave */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente elegante */
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    margin-top: 12rem;
+}
+
+.hero-text h1 {
+    margin-bottom: 10px; /* Espaciado inferior entre el h1 y el párrafo */
+}
+
+/* estilos de la galeria de imagenes */
+
+.birds-gallery {
+    text-align: center;
+    background-color: lightgreen;
+    position: relative; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 4rem;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.birds-gallery .bird-img-bloks img {
+    max-width: 10rem; 
+    max-height: 10rem;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto elegante */
+    transition: transform 0.3s ease;
+}
+
+.birds-gallery .bird-img-bloks img:hover {
+    transform: scale(1.1); /* Aumenta la imagen un 10% al pasar el mouse */
+  }
+
+.birds-gallery .bird-box {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+/* Estilos para la leyenda */
+.legend {
+    background-color: #f2f2f2; /* Color de fondo */
+    color: #333; /* Color del texto dentro de la leyenda */
+    padding: 10rem; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde con color gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el autor */
+.author {
+    margin-top: 20px;
+    text-align: right; /* Alinear el nombre del autor a la derecha */
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #222; /* Color de fondo negro suave */
+    color: #fff; /* Color del texto dentro del footer */
+    text-align: center;
+    padding: 20px; /* Espaciado interno del footer */
+    position: relative; /* Establecer posicionamiento relativo para alinear el botón */
+}
+
+/* Estilos para el botón redondeado transparente */
+.round-button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff; /* Borde blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* Animación de transición cuando el mouse pasa sobre el botón */
+.round-button:hover {
+    background-color: #fff;
+    color: #222;
+    transform: scale(1.1); /* Efecto de zoom del botón al pasar el mouse */
+}
